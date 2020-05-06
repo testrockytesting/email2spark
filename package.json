@@ -4,7 +4,9 @@
   "description": "",
   "main": "email2spark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Marcello Federico",
   "license": "MIT",
@@ -17,6 +19,8 @@
     "multer": "^1.2.0",
     "node-ciscospark": "git+https://github.com/marchfederico/node-ciscospark.git",
     "node-sparkclient": "^0.1.2",
-    "pmx": "^1.0.4"
-  }
+    "pmx": "^1.0.4",
+    "snyk": "^1.319.0"
+  },
+  "snyk": true
 }
